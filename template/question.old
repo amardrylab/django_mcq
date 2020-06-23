@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="POST">
+{% csrf_token %}
+	{{ form.non_field_errors }}
+	{{ form.source.errors }}
+	{{ form.source }}
+<div class="well">
+<ol>
+<p>	<li>What is the AnsQ of the the math 2+2=?
+		<ol>
+			<li>2
+			<li>5
+			<li>7
+			<li>4
+		</ol>
+	{{ form.AnsQ1.label_tag }}
+	{{ form.AnsQ1.errors }} 
+	{{ form.AnsQ1 }} 
+</p>
+
+<p>	<li>What is the name of the Prime Minister of India?
+		<ol>
+			<li>Narendra Modi
+			<li>Harbhajan Singh
+			<li>Monmohan Singi
+			<li>Anil Ambani
+		</ol>
+	{{ form.AnsQ2.label_tag }}
+	{{ form.AnsQ2.errors }}
+	{{ form.AnsQ2 }}
+</p>
+
+<p>	<li>Which one is not the primary colour in RGB system?
+		<ol>
+			<li>Red
+			<li>Green
+			<li>Blue
+			<li>Yellow
+		</ol>
+	{{ form.AnsQ3.label_tag }}
+	{{ form.AnsQ3.errors }}
+	{{ form.AnsQ3 }}
+</p>
+
+<p>	<li>Which state of the water has the lowest temperature?
+		<ol>
+			<li>Ice
+			<li>Water
+			<li>Steam
+			<li>Plasma
+		</ol>
+	{{ form.AnsQ4.label_tag }}
+	{{ form.AnsQ4.errors }}
+	{{ form.AnsQ4 }}
+</p>
+
+<p>	<li>Which one of the following is not soluble in water?
+		<ol>
+			<li>Mastered oil
+			<li>Sugar
+			<li>Common salt
+			<li>Acetone
+		</ol>
+	{{ form.AnsQ5.label_tag }}
+	{{ form.AnsQ5.errors }}
+	{{ form.AnsQ5 }}
+</p>
+
+<p>	<li>Which one of the following is not the son of Kunti
+		<ol>
+			<li>Judhisthir
+			<li>Bhim
+			<li>Arjun
+			<li>Nakul	
+		</ol>
+	{{ form.AnsQ6.label_tag }}
+	{{ form.AnsQ6.errors }}
+	{{ form.AnsQ6 }}
+</p>
+
+<p>	<li>Which one of the following Vedas is the oldest one?
+		<ol>
+			<li>Rikh
+			<li>Sam
+			<li>Jajur
+			<li>Atharba
+		</ol>
+	{{ form.AnsQ7.label_tag }}
+	{{ form.AnsQ7.errors }}
+	{{ form.AnsQ7 }} 
+</p>
+
+<p>	<li>Which one of the following subjects is not in the categorie of science
+		<ol>
+			<li>Physics
+			<li>Chemistry
+			<li>Mathematics
+			<li>History
+		</ol>
+	{{ form.AnsQ8.label_tag }}
+	{{ form.AnsQ8.errors }}
+	{{ form.AnsQ8 }}
+</p>
+
+<p>	<li>The major component of air is
+		<ol>
+			<li>Nitrogen
+			<li>Oxygen
+			<li>Carbondioxide
+			<li>Helium
+		</ol>
+	{{ form.AnsQ9.label_tag }}
+	{{ form.AnsQ9.errors }}
+	{{ form.AnsQ9 }}
+</p>
+
+<p>	<li>What is name of the virus of covid-19 infection?
+		<ol>
+			<li>Sars cov 2
+			<li>Mars cov 2
+			<li>Sars cov
+			<li>Mars cov
+		</ol>
+	{{ form.AnsQ10.label_tag }}
+	{{ form.AnsQ10.errors }}
+	{{ form.AnsQ10 }}
+</p>
+</ol>
+</div>
+	<input type='submit' value='Submit',class="btn btn-primary btn-lg" >
+</form>
+
+{% endblock %}
